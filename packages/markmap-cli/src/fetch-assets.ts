@@ -80,7 +80,7 @@ async function downloadAsset(
   }
   const url = await resolveUrl();
   let body: ReadableStream;
-  if (url.startsWith('/')) {
+  if (await isFile(url)) {
     body = createStreamBody(createReadStream(url));
   } else {
     const res = await fetch(url);
@@ -89,6 +89,15 @@ async function downloadAsset(
   }
   await mkdir(dirname(fullPath), { recursive: true });
   await pipeline(body, createWriteStream(fullPath));
+}
+
+async function isFile(url: string) {
+  try {
+    const result = await stat(url);
+    return result.isFile();
+  } catch {
+    return false;
+  }
 }
 
 async function main() {
