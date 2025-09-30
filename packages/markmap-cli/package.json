@@ -1,5 +1,5 @@
 {
-  "name": "markmap-cli",
+  "name": "@huaichao.wang/markmap-cli",
   "version": "0.18.12",
   "description": "Create markmaps from CLI",
   "author": "Gerald <gera2ld@live.com>",

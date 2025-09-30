@@ -1,5 +1,5 @@
 {
-  "name": "markmap-render",
+  "name": "@huaichao.wang/markmap-render",
   "version": "0.18.12",
   "description": "Visualize your Markdown as mindmaps with Markmap",
   "author": "Gerald <gera2ld@live.com>",

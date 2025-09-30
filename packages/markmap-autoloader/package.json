@@ -1,5 +1,5 @@
 {
-  "name": "markmap-autoloader",
+  "name": "@huaichao.wang/markmap-autoloader",
   "version": "0.18.12",
   "description": "Load markmaps automatically in HTML",
   "author": "Gerald <gera2ld@live.com>",

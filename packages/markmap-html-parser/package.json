@@ -1,5 +1,5 @@
 {
-  "name": "markmap-html-parser",
+  "name": "@huaichao.wang/markmap-html-parser",
   "version": "0.18.11",
   "description": "Parse HTML into markmap data structure",
   "author": "Gerald <gera2ld@live.com>",
